@@ -17,7 +17,7 @@ branches:
     - /^v\d+\.\d+\.\d+$/
 deploy:
   provider: releases
-  api_key: '$GH_RELEASES_KEY'
+  api_key: '$GH_TOKEN'
   file: extension.vsix
   skip_cleanup: true
   on:
