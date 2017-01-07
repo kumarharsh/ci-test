@@ -1,0 +1,62 @@
+{
+  "name": "ci-test",
+  "displayName": "CI-TEST",
+  "version": "1.0.0",
+  "description": "CI-TEST tests upload functionality of ci-server!",
+  "author": {
+    "name": "Kumar Harsh",
+    "email": "khs@playlyfe.com",
+    "url": "https://github.com/kumarharsh"
+  },
+  "keywords": [
+    "vscode",
+    "visual studio code"
+  ],
+  "publisher": "kumar-harsh",
+  "engines": {
+    "vscode": "^1.4.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumarharsh/ci-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kumarharsh/ci-test/issues"
+  },
+  "homepage": "https://github.com/kumarharsh/ci-test/blob/master/README.md",
+  "icon": "logo.svg",
+  "activationEvents": [
+    "onLanguage:graphql"
+  ],
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p .",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "semantic-release": "semantic-release pre && vsce publish -p VS_TOKEN && vsce package -o extension.vsix && semantic-release post"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.40",
+    "lodash.get": "^4.4.2",
+    "request": "^2.79.0",
+    "semantic-release": "^6.3.2",
+    "typescript": "^2.0.10",
+    "vscode": "^1.0.3"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^2.5.0",
+    "vscode-languageserver": "^2.6.2",
+    "vscode-uri": "^1.0.0"
+  },
+  "galleryBanner": {
+    "color": "#0088ff",
+    "theme": "dark"
+  },
+  "release": {
+    "getLastRelease": "./scripts/getLastRelease"
+  }
+}
