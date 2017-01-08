@@ -49,7 +49,6 @@ Tag a version manually or define "fallbackTags".`, 'ENODISTTAG'))
 
     cb(null, {
       version,
-      // gitHead: data.versions[version].gitHead,
       get tag () {
         npmlog.warn('deprecated', 'tag will be removed with the next major release')
         return npm.tag
