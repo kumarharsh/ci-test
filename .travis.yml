@@ -8,18 +8,10 @@ node_js:
   - '6'
 before_install:
   npm install -g vsce
-install:
-  npm install
+before_script:
+  npm prune
 after_success:
   npm run semantic-release
 branches:
   only:
     - master
-before_deploy: ls -al ~
-deploy:
-  provider: releases
-  api_key: '$GH_TOKEN'
-  file: ~/extension.vsix
-  skip_cleanup: true
-  on:
-    tags: true
