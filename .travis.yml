@@ -15,11 +15,11 @@ after_success:
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
-before_deploy: ls -al
+before_deploy: ls -al ~
 deploy:
   provider: releases
   api_key: '$GH_TOKEN'
-  file: ./extension.vsix
+  file: ~/extension.vsix
   skip_cleanup: true
   on:
     tags: true
