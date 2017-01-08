@@ -13,8 +13,8 @@ install:
 after_success:
   npm run semantic-release
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+    - master
 before_deploy: ls -al ~
 deploy:
   provider: releases
