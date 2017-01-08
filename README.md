@@ -6,3 +6,5 @@ This file holds some text to enable making incremental commits to test travis-ci
 3. The build extension is auto-published onto Microsoft Visual Studio Marketplace
 
 test
+
+MOAR README!
