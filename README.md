@@ -8,3 +8,5 @@ This file holds some text to enable making incremental commits to test travis-ci
 test
 
 MOAR README!
+
+CHORE!!!
