@@ -15,6 +15,7 @@ after_success:
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+before_deploy: ls -al
 deploy:
   provider: releases
   api_key: '$GH_TOKEN'
