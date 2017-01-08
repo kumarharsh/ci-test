@@ -1,7 +1,7 @@
 {
   "name": "ci-test",
   "displayName": "CI-TEST",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "CI-TEST tests upload functionality of ci-server!",
   "author": {
     "name": "Kumar Harsh",
